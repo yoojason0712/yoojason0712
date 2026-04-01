@@ -1,72 +1,150 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>유준현 | GitHub Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #e2e8f0;
-            text-align: center;
-        }
-        .container {
-            padding: 50px 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #38bdf8;
-            margin-bottom: 30px;
-        }
-        .card {
-            background: #1e293b;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 500px;
-            margin: 0 auto;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-        p {
-            line-height: 1.6;
-        }
-        .highlight {
-            color: #22c55e;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #94a3b8;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유준현 | Pro Gamer</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #0f172a, #020617);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /* 배경 효과 */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 200%;
+        height: 200%;
+        background: repeating-linear-gradient(
+            45deg,
+            rgba(56,189,248,0.05) 0px,
+            rgba(56,189,248,0.05) 1px,
+            transparent 1px,
+            transparent 50px
+        );
+        animation: moveBg 20s linear infinite;
+    }
+
+    @keyframes moveBg {
+        0% { transform: translate(0,0); }
+        100% { transform: translate(-200px, -200px); }
+    }
+
+    .container {
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px #38bdf8;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #38bdf8; }
+        to { text-shadow: 0 0 25px #22c55e; }
+    }
+
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+
+    .card {
+        background: rgba(30,41,59,0.7);
+        border: 1px solid rgba(56,189,248,0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 550px;
+        margin: auto;
+        box-shadow: 0 0 30px rgba(56,189,248,0.2);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 50px rgba(34,197,94,0.5);
+    }
+
+    p {
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .highlight {
+        color: #22c55e;
+        font-weight: bold;
+    }
+
+    .tag {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        background: rgba(56,189,248,0.2);
+        border: 1px solid #38bdf8;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+
+    .tag:hover {
+        background: #38bdf8;
+        color: black;
+        transform: translateY(-3px);
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #94a3b8;
+    }
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>👋 안녕하세요, 유준현입니다</h1>
-        <h2>High School Student & Gamer</h2>
 
-        <div class="card">
-            <p>
-                저는 대한민국에 살고 있는 <span class="highlight">고등학교 2학년</span>입니다.
-            </p>
-            <p>
-                <span class="highlight">게임</span>을 정말 좋아하고,
-                언젠가는 <span class="highlight">프로게이머</span>가 되는 것이 꿈입니다.
-            </p>
-            <p>
-                다양한 게임을 즐기면서 실력을 키우고 있고,
-                앞으로 더 성장해 나가고 싶습니다.
-            </p>
+<div class="container">
+    <h1>🎮 Yoo Junhyeon</h1>
+    <h2>Future Pro Gamer</h2>
+
+    <div class="card">
+        <p>
+            안녕하세요. 저는 대한민국에 살고 있는  
+            <span class="highlight">고등학교 2학년 유준현</span>입니다.
+        </p>
+
+        <p>
+            <span class="highlight">게임을 좋아하고</span>,  
+            끊임없이 실력을 키워  
+            <span class="highlight">프로게이머</span>가 되는 것이 목표입니다.
+        </p>
+
+        <p>
+            매일 플레이하고, 배우고, 성장합니다 🚀
+        </p>
+
+        <div style="margin-top:20px;">
+            <span class="tag">🎮 Gamer</span>
+            <span class="tag">🔥 Competitive</span>
+            <span class="tag">🚀 Dream Big</span>
         </div>
-
-        <footer>
-            © 2026 유준현 | GitHub Pages
-        </footer>
     </div>
+
+    <footer>
+        © 2026 유준현 | Built with GitHub Pages
+    </footer>
+</div>
+
 </body>
 </html>
